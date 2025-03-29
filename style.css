@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-.main-container {
+.main-container 
+{
     display: flex;
     flex-direction: column;
 }
@@ -488,9 +489,7 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
-    .main-container {
-        height: fit-content;
-    }
+
 
     .nav {
         width: 100%;
@@ -582,6 +581,7 @@ footer {
         right: 0;
         position: relative;
         background-color: #f7f4f3;
+
     }
 
     .img-contain {
@@ -623,7 +623,7 @@ footer {
         height: auto;
         padding: 0px;
         background-color: #f7f4f3;
-        margin-top: 160px;
+        margin-top: 170px;
         padding: 20px;
     }
 
@@ -641,81 +641,86 @@ footer {
         font-size: 12px;
     }
 
-    .about p 
-    {
+    .about p {
         width: 90%;
         text-align: justify;
         font-size: 12px;
         margin-left: 10px;
     }
-    
 
-    footer 
-    {
+
+    footer {
         height: 50px;
         display: flex;
         flex-direction: row;
         font-size: 10px;
     }
-    .info 
-    {
-        width:80%;  
+
+    .info {
+        width: 100%;
         position: absolute;
-        bottom:-10px;
+        bottom: -10px;
+        left:-10%;
 
     }
 
-    .info-2
-    {
-        position:absolute;
-        bottom:-60px;
-        left:0px;
-    }
-    .copy 
-    {
-        width:100%;
+    .info-2 {
         position: absolute;
-        bottom:-100px;
-        left:0px;
+        bottom: -60px;
+        left: 10%;
+    }
+
+    .copy {
+        width: 100%;
+        position: absolute;
+        bottom: -110px;
+        left: 0px;
 
     }
 
 
 }
 
-@media screen and (max-width: 376px) 
-{
-    .img-contain
-    {
-        width:70%;
-        left:60px;
+@media screen and (max-width: 376px) {
+    .img-contain {
+        width: 70%;
+        left: 60px;
     }
-    .img-contain p
-    {
+
+    .img-contain p {
         margin-top: 10px;
-       
+
     }
+    .info-2 
+    {
+        left:5%;
+    }
+    .copy
+    {
+        left:-5%;
+    }
+    
 
 }
 
-@media screen and (max-width: 320px)
-{
-    .img-contain
-    {
-        width:80%;
-        height:auto;
-        left:40px;
+@media screen and (max-width: 320px) {
+    .img-contain {
+        width: 80%;
+        height: auto;
+        left: 40px;
     }
-    .info 
-    {
-        width:100%;
+
+    .info {
+        width: 100%;
+        bottom: -30px;
     }
-    .info
-    {
-        bottom:-30px;
+    .copy {
+        bottom: -120px;
+        left:-10%;
     }
-    .copy 
+    .info-2 
     {
-        bottom:-120px;
+        left:0;
     }
-} 
+
+}
